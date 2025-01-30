@@ -1,6 +1,13 @@
-export function Home () {
-    return (
-        
-        <h1>Olá Mundo</h1>
-    )
+import TransactionForm from "../components/TransactionForm";
+import TransactionList from "../components/TransactionList";
+import BalanceDisplay from "../components/BalanceDisplay";
+export function Home() {
+  return (
+    <div>
+      <h1>Controle de Dinheiro</h1>
+      <BalanceDisplay />
+      <TransactionForm />
+      <TransactionList />
+    </div>
+  );
 }

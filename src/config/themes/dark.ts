@@ -1,8 +1,8 @@
-import { DefaultTheme } from "styled-components";
+import { DefaultTheme } from "styled-components/dist/types";
 
-export const darkTheme: DefaultTheme = {
+export const dark: DefaultTheme = {
   backgroundColor: "#3a3a3a",
   textColor: "#ffff",
-  primaryColor: "#ee04e6",
-  dividerColor: "#ffff",
+  primaryColor: "#bd0dfd",
+  dividerColor: "gray",
 };
