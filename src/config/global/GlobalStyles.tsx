@@ -1,13 +1,13 @@
-import { createGlobalStyle } from "styled-components";
+import { GlobalStyles } from "@mui/material";
+import { CSSObject } from "@emotion/react";
 
-export const GlobalStyles = createGlobalStyle`
-  * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      text-align: center;
-      
-  }
+const styles: Record<string, CSSObject> = {
+  "*": {
+    margin: 0,
+    padding: 0,
+  },
+};
 
-  /* ...resto dos meu estilos compartilhados */
-`;
+export function GlobalStyle() {
+  return <GlobalStyles styles={styles} />;
+}

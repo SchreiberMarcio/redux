@@ -1,9 +1,9 @@
 import { configureStore } from "@reduxjs/toolkit";
-import transactionReducer from "./slices/transactionsSlice";
+import financialReducer from "./modules/counterSlice"; // Atualize o nome do reducer, se necessário
 
 export const store = configureStore({
   reducer: {
-    transactions: transactionReducer,
+    financial: financialReducer, // Atualize o nome do slice aqui
   },
 });
 
